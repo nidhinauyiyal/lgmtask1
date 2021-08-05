@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <style>*{
+        margin: 0; padding: 0; box-sizing: border-box;
+    }
+    .menu{
+        
+    width: 95%;
+            margin-top: 24%;
+    margin-left: 1px;
+            
+    
+        }
+        ul{
+            background-color: rgb(245, 217, 174);;
+            display: inline;
+            list-style: none;
+        
+            
+           
+        }
+        li {
+            
+            text-align: center;
+            border: 2px solid orange;
+            padding: 15px 5px;
+            text-align: center;
+        
+    
+        }
+        li a{
+            text-align: center;
+            padding:  5px 69px;
+            
+            color:orange;
+            font-weight: bold;
+           font-size: 18px;
+           text-decoration: none;
+        }
+        a.active{
+            
+            color:orangered;
+        }
+        a:hover{
+            background-color: orange;
+         color:#fff;
+        }
+    nav{
+        height: 100vh;
+        width: auto;
+        margin:0;
+        padding: 0;
+
+    }
+        .slider-box{
+            height: 60vh;
+            width: 60%;
+            margin: 30px auto;
+            position: relative;
+            overflow: hidden;
+                }
+        #slider{
+
+        width:100%;
+            display:inline-flex ;
+            transition: 0.7s;
+        }
+        #slider img{
+            height: 100%;
+            width:100%;
+            background-position: center;
+        }
+        .indicator{
+            position: absolute;
+            transform: translate(-50%);
+            left:50%;
+            bottom: 20px;
+
+        }
+    .indicator span{
+        border-radius: 50%;
+        display: inline-block;
+        width:15px ;
+        height: 15px;
+        cursor: pointer;
+        background-color: black;
+
+    }
+    .active{
+        background: white !important;
+    }
+.aside{
+    width:15%;
+    height:100vh;
+    float:left;
+    background-color: white;
+    border-radius: 2px;
+    margin-top: 2px;
+    border: 1px solid orange;
+    background: rgb(245, 217, 174);
+}
+header{
+    width:100%;
+    height: 20vh;
+    background-color:orange;
+}
+.tag {
+    font-family: 'windSong', cursive;
+    color: white;
+    font-size: 35px;
+    font-weight: bold;
+    float: right;
+    margin-right:5%;
+    margin-top: 2%;
+    text-transform: capitalize;
+    
+}
+.maindiv{
+    background-color:black;
+    box-shadow: 2px 2px 50px orangered;
+}
+.row{
+        width:75%;
+    display:flex;
+    float: right;
+    
+    margin-right: 50px;
+   
+}
+.column{
+    margin: 0; padding: 0;
+    
+ margin-right: 50px;
+    width:100%;
+}
+.column img{
+    height: 10%;
+    width: 30%;
+    margin:10px;
+}
+
+    </style>
+</head>
+<body><header><h2 class="tag">Our  Super Fresh</br>&nbsp;&nbsp;&nbsp; sushi menu</h2>
+   <!-- <div class="slider-box">
+        <div id="slider">
+       <img src="wall1.jpg">
+            <img src="wall4.jpg">
+            <img src="wall3.jpg">
+            <img src="wall5.jpg">
+        </div>
+        <div class="indicator">
+            <span id="btn1" class="active"></span>
+            <span id="btn2"></span>
+            <span id="btn3"></span>
+            <span id="btn4"></span>
+        </div>
+    </div>-->
+</header>
+    <div class="aside">
+        <div class="menu">
+            <ul>
+                <li><a href="welcome.html" >Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                
+                <li><a href="welcome.html">About</a></li>
+            </ul>
+          
+          </div>
+    </div>
+    <section class="maindiv">
+    <div class="slider-box">
+        <div id="slider">
+       <img src="wall1.jpg">
+            <img src="wall4.jpg">
+            <img src="wall3.jpg">
+            <img src="wall5.jpg">
+        </div>
+        <div class="indicator">
+            <span id="btn1" class="active"></span>
+            <span id="btn2"></span>
+            <span id="btn3"></span>
+            <span id="btn4"></span>
+        </div>
+    </div>
+    </section>
+ <section class="row">
+     <div class="column" style="background-color: orange;">
+       
+        <img src="img13.jpg" height="50%" width="50%">
+         <img src="img3.jpg" height="50%" width="50%">
+         <img src="img4.jpg" height="50%" width="50%">
+         <img src="img5.jpg" height="50%" width="50%">
+         <img src="img6.jpg" height="50%" width="50%">
+         <img src="img7.jpg" height="50%" width="50%">
+         <img src="img8.jpg" height="50%" width="50%">
+         <img src="img9.jpg" height="50%" width="50%">
+         <img src="img10.jpg" height="50%" width="50%">
+         <img src="img11.jpg" height="50%" width="50%">
+         <img src="img12.jpg" height="50%" width="50%">
+         <img src="img13.jpg" height="50%" width="50%">
+         <img src="img5.jpg" height="50%" width="50%">
+         <img src="img6.jpg" height="50%" width="50%">
+         <img src="img7.jpg" height="50%" width="50%">
+         <img src="img8.jpg" height="50%" width="50%">
+         <img src="img9.jpg" height="50%" width="50%">
+         <img src="img10.jpg" height="50%" width="50%">
+         
+     </div>
+ </section>
+
+    <script>
+        var slide=document.getElementById("slider");
+        var btn1=document.getElementById("btn1");
+        var btn2=document.getElementById("btn2");
+        var btn3=document.getElementById("btn3");
+        var btn4=document.getElementById("btn4");
+        btn1.onclick=function(){
+            slide.style.transform="translateX(0px)";
+            btn1.classList.add("active");
+            btn2.classList.remove("active");
+            btn3.classList.remove("active");
+            btn4.classList.remove("active");
+        }
+        btn2.onclick=function(){
+            slide.style.transform="translateX(-100%)";
+            btn2.classList.add("active");
+            btn1.classList.remove("active");
+            btn3.classList.remove("active");
+            btn4.classList.remove("active");
+        }
+        btn3.onclick=function(){
+            slide.style.transform="translateX(-200%)";
+            btn3.classList.add("active");
+            btn2.classList.remove("active");
+            btn1.classList.remove("active");
+            btn4.classList.remove("active");
+        }
+        btn4.onclick=function(){
+            slide.style.transform="translateX(-300%)";
+            btn4.classList.add("active");
+            btn1.classList.remove("active");
+            btn2.classList.remove("active");
+            btn3.classList.remove("active");
+        } </script>
+    
+</body>
+</html>

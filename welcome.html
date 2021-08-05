@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Tourney:wght@100&display=swap" rel="stylesheet">
+<!--<link rel="stylesheet" href="style.css">-->
+    <style>
+        *{
+            margin:0;
+        padding: 0;   
+    box-sizing: border-box; 
+    
+ }
+        nav{
+            background-image: url("img3.jpg");
+            height: 80vh;
+            width: auto;
+            background-color: rgb(250, 250, 151);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: scroll;
+        }
+     /*   header::before{
+    content: '';
+    width:100%;
+    height: 100vh;
+    position: absolute;
+    background: rgba(0,0,0,0.5);
+    z-index: -1;
+        
+        }*/
+        .logo{
+            height: 20vh;
+            width: 10%;
+        margin-left: 2%;
+           
+        }
+        .logo .ani{
+            font-family: 'Tourney', cursive;
+            color:orange;
+            text-transform: uppercase;
+            font-size: 45px;
+            margin-left: 5px;
+            margin-top: 8px;
+            font-weight: bolder;
+        }
+        .menu{
+            margin-right: 5px;
+            margin-top: 5%;
+            float: right;
+            height: 10%;
+            width: 10%;
+        
+        }
+        ul{
+            background-color: orangered;
+            display: inline;
+            list-style: none;
+            
+           
+        }
+        li {
+            text-align: center;
+            border: 2px solid orange;
+            border-radius: 4px;
+            padding: 5px 5px;
+    
+        }
+        li a{
+            text-align: center;
+            padding:  5px0;
+        
+            color:orange;
+            font-weight: bold;
+           font-size: 18px;
+           text-decoration: none;
+        }
+        a.active{
+            
+            color:orangered;
+        }
+        a:hover{
+            background-color: rgb(168, 160, 243);
+         
+        }
+        .tagline {
+            position: relative;
+            font-family: 'Fuggles', cursive;
+
+            font-size: 65px;
+        }
+        .ani{
+        font-size: 45px;
+            margin-left: 40%;
+            color: #fff;
+              }
+        .cont{
+            color:blue;
+            position: relative;
+            font-size:0;
+            font-family: ralway, sans-serif;
+        }
+         p{
+            color: #ffff;
+          margin-left: 2%;
+          margin-top: 10%;
+        }
+        .row{
+           display:flex;
+            margin: 10px;
+        }
+        .column{
+            float: left;
+            flex:33.33%;
+           padding: 5px;
+        }
+        .column img{
+            width: 100%; height: auto;
+        }
+        .column img:hover{
+            border: 2px solid orangered;
+                        transition: .5s;
+        }
+        .row::after{
+            content:"";
+            display: table;
+            clear: both;
+        }
+    
+
+         .cnt{
+             
+             display:flex;
+             justify-content: center;
+             background-color: black;
+         }
+         .card{
+             background: rgb(245, 217, 174);
+             width: 270px;
+             margin: 20px;
+             border-radius: 5px ;
+             height: 40%;
+             border: 1px solid rgb(255, 255,255, 0.1);
+            
+            }
+        .cardimg-card1{
+
+            height: 150px;
+            background-image: url("img6.jpg");
+            background-size: cover;
+        }
+  
+        .cardimg-card2{
+            
+            height: 150px;
+            background-image: url("img8.jpg");
+            background-size: cover;
+        }
+        .cardimg-card3{
+            
+            height: 150px;
+            background-image: url("img9.jpg");
+            background-size: cover;
+        }
+        .card:hover{
+            background-color:orange;
+            cursor:pointer;
+            transform: scale(1.03); /*hover with card size increasing*/
+            transition: all -1s ease;
+            
+        }
+  h2{
+             text-transform: uppercase;
+             text-align: center;
+             font-family: monospace, sans-serif;
+             font-size: 30px;
+             color:black;
+         }
+         .para{
+             font-size: 22px;
+             color: orangered;
+             
+             margin-bottom: 23px;
+             text-align: center;
+         }
+     
+     .maindiv{
+         width: 100%;
+         height: 100%;
+         background-color:black;
+         position: relative;
+        
+     }
+    
+          #slider{            
+            height: 100%;
+               width: 100%;
+               display: inline-flex;
+               transition: .7s;
+           }
+           .slider img{
+               width: 100%;
+               height: 100%;
+           /* height: 80%;*/
+               background-position: center;
+               background-size: cover;
+           }
+           .indicator{
+            position: absolute;
+            transform: translate(-50%);
+            left:50%;
+            bottom: 20px;
+            margin-bottom: 12%;
+        }
+    .indicator span{
+        border-radius: 50%;
+        display: inline-block;
+        width:15px ;
+        height: 15px;
+        cursor: pointer;
+        background-color: black;
+        
+    }
+    .active{
+        background: white !important;
+    }
+    .whowe{
+        background-color: black;
+    }
+
+
+
+    .about{
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        height: 30vh;
+        background-color: orange;
+    }
+        /*   .about h1{
+               float: center;
+              font-size: 45px;
+              text-align: center;
+              color:#fff;
+              font-family: fantasy;
+              text-transform: capitalize;
+           }
+           .how{
+color:#000 2;
+
+
+           }*/
+        /*   .container{
+            background-color: black;
+            padding: 5px;
+            border: 2px solid silver;
+           }*/
+        .cards{
+          
+            height: 50vh;
+            width: 30%;
+        border: 1px solid white;
+            background-color:orange;
+            margin-left :30px;
+        display: inline-flex;
+        text-align: center;
+        }
+        .cards .card-txt{
+            height: 150px;
+            
+            background-size: cover;
+        }
+        .cards:hover{
+            background-color: peachpuff;
+            color: orangered;
+        }
+        
+        .inside{
+            margin-top: 15%;
+            font-size: 18px;
+            text-align: center;
+            color: white;
+        }
+        .colorchange{
+            margin-left: 14%;
+font-size: 45px;
+font-family: fantasy;
+            animation:colorchng 2s infinite
+        }
+@keyframes colorchng {
+    0%{
+        color: red;
+    }
+    25%{
+        color:yellow;
+    }
+    50%{
+        color: blue;
+    }
+    75%{
+        color:green;
+    }
+    100%{
+        color:orangered;
+    }
+}
+.count{
+
+    height: 20vh;
+    width: 100%;
+    background-color: rgb(245, 217, 174);
+    display: inline-flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+/*********************************************************************************************/
+
+.review-card{
+
+    display: inline-flex;
+    border: 1px solid orangered;
+    height: 300px;
+    width: 300px;
+perspective: 1000px;
+margin-left:80px;
+margin-top: 6%;
+}
+.review-card-inner{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 2px 2px 12px black;
+}
+.review-card-front, .review-card-back{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    
+}
+.review-card-front{
+    background-color:#bbb ;
+    color: black;
+}
+.review-card-back{
+background-color: dodgerblue;
+    transform: rotateY(180 deg);
+    color: black;
+    transform: rotateY(180deg);
+}
+.review-card:hover .review-card-inner{
+    transform: rotateY(180deg);
+}
+/*************************************contact us**************************************************** */
+*{
+    margin:0; padding:0; box-sizing: border-box;
+
+    color:#ffff ;
+    font-family: 'Raleway', sans-serif;
+}
+/*body{
+    display: flex;
+    justify-content:center;
+    justify-items: center;
+background-image: url("pic2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    min-height: 100vh;
+    width: 100%;
+    
+}
+body::before{
+    content: '';
+    width:100%;
+    height: 100vh;
+    position: absolute;
+    background: rgba(0,0,0,0.5);
+    z-index: -1;
+}*/
+.contme{
+    background-image: url("pic2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.container{
+ height: 80vh;
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+text-align:left;
+
+    width:30%;
+  background: rgba(255,255,255,0.1);
+  border-top: 1px solid rgba(255,255,255,0.5) ;
+  border-left: 1px solid #ffffff80 ;
+  border-radius: 10px;
+  -webkit-backdrop-filter: blur(2px);
+  
+}
+form{
+    margin-top: 5%;
+    margin:0 auto;
+    width: 275px;
+
+}
+form input{
+    margin:15px 0;
+    background: rgba(255,255,255,0.1);
+    width: 100%;
+    height: 40px;
+    border-left: 1px solid #ffffff80;
+    border-top: 1px solid rgba(255,255,255,0.5);
+    border-radius: 4px;
+    border-right: none;
+    border-bottom: none;
+    text-align: center;
+    color: #fff;
+}
+input::placeholder{
+ float: left;
+ text-align: left;
+letter-spacing: 2px;
+padding-left: 10px;
+font-size: 15px;
+color: #ffff;
+margin-top: 4px;
+
+}
+label{
+    font-size: 17px;
+    font-weight: bold;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+}
+
+h1{
+    margin-top: 14px;
+    font-size: 40px;
+}
+h4{
+    padding-bottom: 14px;
+    font-size:15px ;}
+    .btn{
+        width: 100%;
+        background:white;
+        height: 40px;  
+        border-radius: 4px;
+        border:none;
+        text-align: center;
+        color: black;
+        font-weight: bold;
+        font-size: 15px;
+    }
+    .btn:hover{
+        background-color: rgba(255,255,255,0.1);
+    }
+    input:focus{
+        outline: none;
+    }
+    </style>
+</head> 
+<body>
+    <header>
+<nav>
+    <div class="logo">
+        <span class="colorchange">sushi</br>&nbsp; hanii</span>
+        
+ 
+    </div>
+
+   <div class="menu">
+    <ul>
+        <li><a href="welcome.html" class="active" >Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="welcome.html">Blog</a></li>
+        <li><a href="welcome.html">About</a></li>
+    </ul>
+  
+  </div>
+  <h1 class="tagline" style="color: white;">fresh serve</style></h1>
+  <p style="font-size:28px; font-family:monospace; letter-spacing: 1px; font-weight: bold;">meet, Eat & enjoy</br> &nbsp;
+    the true taste </p>
+  
+    
+</nav>
+
+
+   <section class="cnt">
+       <div class="card">
+           <div class="cardimg-card1"></div>
+           <h2 class="tit">Special Offer</h2>
+           <p class="para">this is our specility</p>
+       </div>
+       <div class="card">
+        <div class="cardimg-card2"></div>
+        <h2 class="tit">Special Offer</h2>
+        <p class="para">this is our specility</p>
+    </div>
+         <div class="card">
+           <div class="cardimg-card3"></div>
+           <h2 class="tit">Special Offer</h2>
+        <p class="para" ><a href=menu.html style="color: orangered;">View More-></a></p>
+           
+
+       </div>
+   </section>
+
+   <section class="maindiv">
+    <div class="slider-box">
+        <div id="slider">
+
+       <img src="wall1.jpg"  height="100%" width="100%">
+            <img src="wall4.jpg" height="100%" width="100%">
+            <img src="wall3.jpg"  height="100%" width="100%">
+            <img src="wall5.jpg"  height="100%" width="100%">
+        </div>
+        <div class="indicator">
+            <span id="btn1" class="active"></span>
+            <span id="btn2"></span>
+            <span id="btn3"></span>
+            <span id="btn4"></span>
+        </div>
+    </div>
+    </section>
+    <section class="about">
+        <h1>about us </h1>
+        <quotes style="color: #fff; margin-left: 40%; font-size: 22px; float:right"><marquee>"our mission is to serve best quality food to our customer with best servies and ambience"</marquee>
+        </quotes></section>
+<div class="whowe">
+        <h2 class="who" style="color: white; font-size: 45px;">who We Are</h2>
+        
+                <div style="margin-bottom: 4%; font-family: fantasy;" class="cards">
+            <img class="crd1" src=""> 
+            <div class="card-txt">
+                <h2 class="inside">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere eos doloremque, recusandae maiores quas voluptatem reiciendis et accusantium repudiandae? Natus accusamus eaque dolorum cupiditate veritatis voluptas quidem odit debitis ducimus?</h2>
+            </div></div>
+            <div class="cards">
+                <img class="crd2" src=""> 
+                <div class="card-txt">
+                    <h2 class="inside">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere eos doloremque, recusandae maiores quas voluptatem reiciendis et accusantium repudiandae? Natus accusamus eaque dolorum cupiditate veritatis voluptas quidem odit debitis ducimus?</h2>
+                </div></div>
+                <div class="cards">
+                    <img class="crd3" src=""> 
+                    <div class="card-txt">
+                        <h2 class="inside">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere eos doloremque, recusandae maiores quas voluptatem reiciendis et accusantium repudiandae? Natus accusamus eaque dolorum cupiditate veritatis voluptas quidem odit debitis ducimus?</h2>
+                    </div></div>
+                   
+            </div>        
+<section class="count">
+    <div class=count1>
+      <h1 style="font-size:20px; font-family: ralway, sans-serif; margin-top:3.2rem;"> 240</br></h1>
+      <h2 style="font-size:15px;font-family: ralway, sans-serif; margin-top: 5px;" >MENU ITEMS</h2>
+    </div>
+    <div class=count2>
+      <h1 style="font-size:20px; font-family: ralway, sans-serif; margin-top:3rem;">  500+</br></h1>
+      <h2 style="font-size:15px;font-family: ralway, sans-serif; margin-top: 5px;" > VISITORS DAILY</h2>
+    </div>
+    <div class=count3>
+      <h1 style="font-size:20px; font-family: ralway, sans-serif; margin-top:2.8rem;">15</br></h1>
+      <h2 style="font-size:15px;font-family: ralway, sans-serif; margin-top: 5px;" > YEARS OF EXPERIENCE</h2>
+    </div>
+</section>
+ <section class="cust" style="height: 100vh; width: 100%; background-color:orange;">
+<h2>our customer says</h2><h3 style="color:white; text-align: center; margin-top: 2%;">lorem ipsum dolor sit amet consectetur adipisicing elit. A, nam sint? Ipsum numquam quod est und</h3>
+
+<div class="review-card">
+    <div class="review-card-inner">
+        <div class="review-card-front">
+            <img src="cust1.jpg" style="width: 300px;height: 300px;">
+
+        </div>
+        <div class="review-card-back">
+            <h1 style="font-size: 25px; background-color: chocolate;">Lisa silwal</h1>
+            <p style="letter-spacing: 1px; text-align: center;font-size: 18px; color:black ;margin-top: 15%;">it was a lovely expirence visiting here. food was delicious, servies was amazing so was ambience.
+                will love to visit here again
+            </p>
+        </div>
+    </div>
+</div>
+<div class="review-card">
+    <div class="review-card-inner">
+        <div class="review-card-front">
+            <img src="cust2.jpg" style="width: 300px;height: 300px;">
+
+        </div>
+        <div class="review-card-back">
+            <h1 style="font-size: 25px;background-color: chocolate;">katty Thomas</h1>
+            <p style="letter-spacing: 1px; text-align: center; font-size: 18px; color:black ;margin-top: 15%;">it was a lovely expirence visiting here. food was delicious, servies was amazing so was ambience.
+                will love to visit here again
+            </p>
+           
+        </div>
+    </div>
+</div>
+<div class="review-card">
+    <div class="review-card-inner">
+        <div class="review-card-front">
+          
+            <img src="cust3.jpg" style="width: 300px;height: 300px;">
+        </div>
+        <div class="review-card-back">
+            <h1 style="font-size: 25px;background-color: chocolate;">Vibhu Das</h1>
+            <p style="letter-spacing: 1px; text-align: center; font-size: 18px; color:black ;margin-top: 15%;">it was a lovely expirence visiting here. food was delicious, servies was amazing so was ambience.
+                will love to visit here again
+            </p>
+        </div>
+    </div>
+</div>
+</section >
+<section class="contme" style="height: 100vh; width: 100%;">
+  
+
+    <div class="container" data-tilt data-tilt-max="50" data-tilt-speed="400" data-tilt-perspective="500">
+        <form action="">
+        <h1>Contact Us</h1>
+        <h4><marquee>Feel Free To Review Us AnyTime</marquee></h4>
+        <label for="Email Id">Username</label></br><input type="text" placeholder=" Enter your Name" required/></br>
+        <label for="Message">Email Id</label></br><input type="text" placeholder="*******" required/></br>
+      <button  class="btn" type="button" onclick="myfunction()">login</button></form>
+      <script src="vanilla-tilt.js"></script>
+      <script>
+          function myfunction(){
+              window.location.href="welcome.html";
+          }
+      </script>
+    </div>
+
+
+</section>
+<footer style="height: 40vh; background-color: orange; bottom: 0;">
+<h3 style="text-align: center; margin-top: 1px;"> All copyright reserved @ letGrowMore foundation</h3>
+<address style="margin-left: 4px; margin-top: 8%;">
+    letsGrowMore</br>
+    1 pal nagar mrg</br>
+    pal vihar
+    delhi-110084</br>
+    india
+</address>
+</footer>
+
+
+
+
+    <footer></footer>
+    <script>
+        var slide=document.getElementById("slider");
+        var btn1=document.getElementById("btn1");
+        var btn2=document.getElementById("btn2");
+        var btn3=document.getElementById("btn3");
+        var btn4=document.getElementById("btn4");
+        btn1.onclick=function(){
+            slide.style.transform="translateX(0px)";
+            btn1.classList.add("active");
+            btn2.classList.remove("active");
+            btn3.classList.remove("active");
+            btn4.classList.remove("active");
+        }
+        btn2.onclick=function(){
+            slide.style.transform="translateX(-100%)";
+            btn2.classList.add("active");
+            btn1.classList.remove("active");
+            btn3.classList.remove("active");
+            btn4.classList.remove("active");
+        }
+        btn3.onclick=function(){
+            slide.style.transform="translateX(-200%)";
+            btn3.classList.add("active");
+            btn2.classList.remove("active");
+            btn1.classList.remove("active");
+            btn4.classList.remove("active");
+        }
+        btn4.onclick=function(){
+            slide.style.transform="translateX(-300%)";
+            btn4.classList.add("active");
+            btn1.classList.remove("active");
+            btn2.classList.remove("active");
+            btn3.classList.remove("active");
+        } </script>
+</body>
+</html>
